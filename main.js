@@ -2,35 +2,42 @@
 // var myName = "Kun"
 // myName = "Chad"
 // console.log(myName)
-
 // // const gabisa diubah
 // const myCar = "Cepet"
 // // myCar = "Honda Freed"
 // console.log(myCar)
+// ambil dari html
+// const cart = document.getElementById('cart');
 
-// var myName ="Kun"
-// myName = "Richard"
-// console.log(myName)
 
-// // ES6
-// let myNameLet = "Kun"
-// myNameLet = "Calvin"
-// console.log(myNameLet)
+// function addProduct(name , Category){
+//     return{
+//         name: name,
+//         categore: Category
+//     }
+// }
 
-const myCarsVar = ["BMW", "Tesla", "Toyota"]
+// var getProduct = addProduct("ip12", "Smartphone")
 
-//let tidak global var global
-for (let i = 0; i<myCarsVar.length;i++)
-{
-    console.log("My Cars = " + myCarsVar[i])
+// console.log(getProduct)
+
+// cart.innerHTML = `Product 1:: ${getProduct.name}, category ${getProduct.categore} 
+
+// es6
+
+const cart = document.getElementById('cart');
+
+
+function addProduct(name , Category){
+    return{
+        name, Category
+    }
 }
 
-console.log(i)
+var getProduct = addProduct("ip12", "Smartphone")
+var product = addProduct("sp", "ip")
 
+console.log(getProduct)
 
-let name ="Hendra"
-
-
-// funcion abc(){
-//     console.log(name);
-// }
+cart.innerHTML = `Product 1: ${getProduct.name} category ${getProduct.categore} `
+cart.innerHTML = `Product 1:: ${product.name}, category ${product.categore} `

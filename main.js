@@ -8,3 +8,4 @@ const myCar = "Cepet"
 // myCar = "Honda Freed"
 console.log(myCar)
 
+const test="asd"

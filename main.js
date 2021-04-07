@@ -1,10 +1,21 @@
+//ambil element
+const skills = document.getElementById("skills")
+const primaryskill = document.getElementById("primaryskill")
 
-var myName = "Kun"
-myName = "Chad"
-console.log(myName)
+const mySkills = ["Backflip", "Drip", "Kongkow", "Slap Bass"]
 
-// const gabisa diubah
-const myCar = "Cepet"
-// myCar = "Honda Freed"
-console.log(myCar)
+//kalo pake foreach jadi undefined
+//map itu kek foreach tapi masukin ke array baru
+const printSkills = mySkills.map((skill) => {
 
+    return skill
+})
+
+// skills.innerHTML = printSkills
+
+//Filter
+const printfPrimarySkill = mySkills.filter((skill)=>{
+    return skill == "Slap Bass"
+})
+
+primaryskill.innerHTML = printfPrimarySkill
